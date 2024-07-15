@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import '/workspaces/BachpanSchoolProject/src/Component/style/Navbar.css';
 // import logo from './images/bachpanlogo.png'; 
 
 function Navbar() {

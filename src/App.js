@@ -17,10 +17,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './AdmissionForm';
-import Gallery from './component1/Gallery';
-import About from '/workspaces/BachpanSchoolProject/src/component2/about.js';
-import Admission from './component4/Admission';
-import Contact from '/workspaces/BachpanSchoolProject/src/component3/contact.js';
+import Gallery from './Component/Gallery.js';
+import About from './Component/about.js';
+import Admission from './Component/Admission.js';
+import Contact from './Component/contact.js';
 import Navbar from './Component/Navbar';
 
 function App() {

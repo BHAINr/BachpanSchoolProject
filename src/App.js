@@ -17,11 +17,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './AdmissionForm';
-import Gallery from './Component/Gallery.js';
-import About from './Component/about.js';
-import Admission from './Component/Admission.js';
-import Contact from './Component/contact.js';
-import Navbar from './Component/Navbar';
+import Gallery from './Component/javascript/Gallery.js';
+import About from './Component/javascript/about.js';
+import Admission from './Component/javascript/Admission.js';
+import Contact from './Component/javascript/contact.js';
+import Navbar from './Component/javascript/Navbar.js';
 
 function App() {
   return (

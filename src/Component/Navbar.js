@@ -1,31 +1,23 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
-//import logo from'./images/bachpanlogo.png'; 
-
+// import logo from './images/bachpanlogo.png'; 
 
 function Navbar() {
-    return (
-      <div className="Nav">
-        
-        <header>
+  return (
+    <div className="Nav">
+      <header>
+        <nav className="navbar">
+          {/* <img src={logo} alt="logo" className="App-logo" /> */}
+          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/about" className="nav-link">About</Link>
+          <Link to="/gallery" className="nav-link">Gallery</Link>
+          <Link to="/admission" className="nav-link">Admission</Link>
+          <Link to="/contact" className="nav-link">Contact</Link>
+        </nav>
+      </header>
+    </div>
+  );
+}
 
-    
-          <nav className="navbar">
-          <img  href="/"  className="App-logo" alt="logo"/>
-
-          <a href="/" target="_blank">Home</a>
-          <a href="/" target="_blank">About</a>
-          <a href="/" target="_blank">Gallery</a>
-          <a href="/" target="_blank">Admission</a>
-          <a href="/" target="_blank">Contact</a>
-           
-          </nav>
-    
-    </header>
-
-    
-
-      </div>
-    );
-  }
-  
-  export default Navbar;
+export default Navbar;

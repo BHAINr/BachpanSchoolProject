@@ -2,10 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '/workspaces/BachpanSchoolProject/src/Component/style/Navbar.css';
 // import logo from './images/bachpanlogo.png'; 
+import MetaData from '../MetaData.js';
 
 function Navbar() {
   return (
+    
     <div className="Nav">
+      <MetaData title="Bachpan School"/>
       <header>
         <nav className="navbar">
           {/* <img src={logo} alt="logo" className="App-logo" /> */}

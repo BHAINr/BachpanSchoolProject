@@ -23,8 +23,10 @@ import Admission from './Component/javascript/Admission.js';
 import Contact from './Component/javascript/contact.js';
 import Navbar from './Component/javascript/Navbar.js';
 
+
 function App() {
   return (
+    
     <Router>
       <Navbar />
       <Routes>

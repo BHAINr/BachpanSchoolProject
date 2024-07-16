@@ -1,6 +1,6 @@
 import React from 'react';
 import '/workspaces/BachpanSchoolProject/src/Component/style/Gallery.css';
-import { render } from '@testing-library/react';
+
 
 const Gallery = () => {
      const render=()=>{

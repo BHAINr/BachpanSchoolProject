@@ -16,12 +16,12 @@
 // export default App;
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './AdmissionForm';
+import Home from './Component/Home.js';
 import Gallery from './Component/javascript/Gallery.js';
 import About from './Component/javascript/about.js';
-import Admission from './Component/javascript/Admission.js';
 import Contact from './Component/javascript/contact.js';
 import Navbar from './Component/javascript/Navbar.js';
+import AdmissionForm from './Component/javascript/AdmissionForm.js';
 
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/admission" element={<Admission />} />
+        <Route path="/admission" element={<AdmissionForm />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>

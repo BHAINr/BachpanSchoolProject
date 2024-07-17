@@ -1,5 +1,4 @@
 import './AdmissionForm.css';
-//import logo from'./images/bachpanlogo.png'; 
 import React, { useState } from "react";
 //import { Button } from "@mui/material";
 function AdmissionForm() {
@@ -42,32 +41,33 @@ function AdmissionForm() {
   };
 
   return (
+
+    <div className='paragraph'>
+      <p className='para2'>We are thrilled to welcome new families to our school community to experience the difference that a <b>BACHPAN</b> <br/>education can make <br/>and look forward to partnering with you in your child's educational journey.</p>
     <div className="form">
 
-<img  href="/"  className="App-logo" alt="logo"/>
-
       <form onSubmit={handleSubmit}>
-            <h1 className="heading">Enroll Today for a Brighter Tomorrow <br/> - Admission Form.</h1>
+            <h1 className="heading">Shape Your Future with Us:  <br/> - Admission Form.</h1>
 
           <div className="selectClass">
-          <label htmlFor="admissionClass">Admission for Class:</label>
+          
           <select
             id="admissionClass"
             value={admissionClass}
             onChange={handleAdmissionClassChange}
           >
-            <option value="">Select Class</option>
-            <option value="Playgroup">Playgroup</option>
-            <option value="Nursery">Nursery</option>
-            <option value="lkg">LKG</option>
-            <option value="ukg">UKG</option>
-            <option value="1st Grade">1st Grade</option>
-            <option value="2nd Grade">2nd Grade</option>
-            <option value="3rd Grade">3rd Grade</option>
-            <option value="4th Grade">4th Grade</option>
-            <option value="5th Grade">5th Grade</option>
-            <option value="6th Grade">6th Grade</option>
-            <option value="7th Grade">7th Grade</option>
+            <option className='grades' value="">Admission for</option>
+            <option className='grades' value="Playgroup">Playgroup</option>
+            <option className='grades' value="Nursery">Nursery</option>
+            <option className='grades' value="lkg">LKG</option>
+            <option className='grades' value="ukg">UKG</option>
+            <option className='grades' value="1st Grade">1st Grade</option>
+            <option className='grades' value="2nd Grade">2nd Grade</option>
+            <option className='grades' value="3rd Grade">3rd Grade</option>
+            <option className='grades' value="4th Grade">4th Grade</option>
+            <option className='grades' value="5th Grade">5th Grade</option>
+            <option className='grades' value="6th Grade">6th Grade</option>
+            <option className='grades' value="7th Grade">7th Grade</option>
           </select>
           </div>
         
@@ -128,7 +128,7 @@ function AdmissionForm() {
             <p>Message <br/> 
             <textarea name="" id="msg" 
             cols="50" 
-            rows="10" 
+            rows="5" 
             placeholder="Enter Your Message">
             </textarea>
             </p>
@@ -136,9 +136,10 @@ function AdmissionForm() {
 
 
 
-          <button variant="contained" type="submit">Submit</button>
+          <button className="animated-button" variant="contained" type="submit">Submit</button>
           </div>
         </form>
+        </div>
         </div>
   );
 }

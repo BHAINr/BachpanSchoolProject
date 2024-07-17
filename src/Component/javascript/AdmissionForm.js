@@ -1,12 +1,18 @@
 import './AdmissionForm.css';
 import React, { useState } from "react";
+import { useDispatch } from 'react-redux';
+import { adfFome } from '../../reducer/fomeReducer';
 //import { Button } from "@mui/material";
 function AdmissionForm() {
   // Step 2: Create state variables for input fields
+  const dispatch = useDispatch();
+
+  const [admissionClass, setAdmissionClass] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [admissionClass, setAdmissionClass] = useState("");
+  //const [email, setEmail]= useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  //const [description, setDescription] = useState("");
 
   // Step 4: Handle input changes
   const handleFirstNameChange = (e) => {
@@ -28,11 +34,8 @@ function AdmissionForm() {
   // Step 5: Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Process form data here
-    console.log("First Name:", firstName);
-    console.log("Last Name:", lastName);
-    console.log("Admission for Class:", admissionClass);
-    console.log("Phone Number:", phoneNumber);
+    console.log("ADmission Fome submit");
+    dispatch(adfFome(firstName, lastName, admissionClass,phoneNumber));
     // Clear form after submission
     setFirstName("");
     setLastName("");

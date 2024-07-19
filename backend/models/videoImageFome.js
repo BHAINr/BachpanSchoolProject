@@ -13,7 +13,6 @@ const videoImageFome = mongoose.Schema({
     },
     year: {
         type: Number,
-        required: true,
         require: [true, "Please enter the image url"],
         min: [1900, 'Year must be at least 1900'],
         max: [new Date().getFullYear(), 'Year cannot be in the future']

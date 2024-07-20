@@ -2,8 +2,9 @@
     display: flex;
     justify-content: end;
     margin-right: 25%;
-
-
+    color: aliceblue;
+width: 100%;
+background-color: black;
 }
 
 .navbar a{

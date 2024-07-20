@@ -1,24 +1,17 @@
-.sidebar {
-    width: 200px;
-    height: 100vh;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    padding: 20px;
-  }
+.rightbar{
+  height: 100vh;
+  background-color: rgb(31, 44, 188);
   
-  .sidebar h2 {
-    margin-left: 15px;
-    margin-top: 10px;
-  }
-  
-  .sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 200px;
-  }
-  
-  .sidebar li {
-    margin: 45px 50px;
-  }
-  
+} 
+.rightbar h2{
+  padding: 50px 30px;
+}
+.rightbar ul {
+  padding:200px 50px;
+}
+.rightbar ul li{
+  margin-top:5px;
+}
+.leftbar{
+   padding: 10px;
+}

@@ -1,22 +1,21 @@
 import React from 'react';
 import '/workspaces/BachpanSchoolProject/src/Component/style/Gallery.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import funGallery from './funGallery';
 
 
 const Gallery = () => {
-    const render = () => {
-        alert("run");
-    }
+   <Gallery/>
     return (
         <div className="container-fluid">
             <div className="row">
                 <div className="col-2 rightbar">
                     <h2>Years of festival</h2>
                     <ul>
-                        <li onClick={render}>2023-2024</li>
-                        <li onClick={render}>2022-2023</li>
-                        <li onClick={render}>2021-2022</li>
-                        <li onClick={render}>2020-2021</li>
+                        <li onClick={funGallery}>2023-2024</li>
+                        <li onClick={funGallery}>2022-2023</li>
+                        <li onClick={funGallery}>2021-2022</li>
+                        <li onClick={funGallery}>2020-2021</li>
                     </ul>
 
                 </div>

@@ -15,6 +15,7 @@
 
 // export default App;
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Component/Home.js';
 import Gallery from './Component/javascript/Gallery.js';
